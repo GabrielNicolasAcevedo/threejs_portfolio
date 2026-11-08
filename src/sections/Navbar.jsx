@@ -1,13 +1,15 @@
 import { useState } from "react"
 
+import { navLinks } from "../constants/index.js"
+import Hero from "./Hero.jsx";
+
 const NavItems = () => {
   return (
     <ul className="nav-ul">
-      {["Home", "About", "  Projects", "Contact"].map(
-        (item, index) => (
-          <li key={index} className="nav-li">
-            <a href="/" className="nav-link_a">
-              {item}
+      {navLinks.map(({id, href, name}) => (
+          <li key={id} className="nav-li">
+            <a href={href} className="nav-link_a" onClick={() => {}}>
+              {name}
             </a>
           </li>
         ))}
@@ -18,7 +20,7 @@ const NavItems = () => {
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => setIsOpen(prev => !prev);
+  const toggleMenu = () => setIsOpen(prevIsOpen => !prevIsOpen);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black/90">
@@ -37,8 +39,12 @@ const Navbar = () => {
             <NavItems />
           </nav>
         </div>
+      </div>
 
-
+      <div className={`nav-sidebar ${isOpen ? 'max-h-screen' : 'max-h-0'}`} >
+        <nav className="p-5">
+          <NavItems />
+        </nav>
       </div>
     </header>
   )
