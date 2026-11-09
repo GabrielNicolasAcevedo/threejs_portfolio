@@ -10,6 +10,7 @@ import Target from "../components/Target.jsx"
 import ReactLogo from "../components/ReactLogo.jsx"
 import Cube from "../components/Cube.jsx"
 import Rings from "../components/Rings.jsx"
+import HeroCamera from "../components/HeroCamera.jsx"
 
 const Hero = () => {
 
@@ -36,7 +37,7 @@ const Hero = () => {
                 </p>
             </div>
 
-            <div className="w-full h-full absolute inset-0">
+            <div className="w-full h-full absolute inset-0 mt-10">
 
                 {/* <Leva /> */}
                 <Canvas className="w-full h-full">
@@ -46,14 +47,17 @@ const Hero = () => {
                             makeDefault
                             position={[0, 0, 30]} />
 
-                        <HackerRoom
-                            position={sizes.deskPosition}
-                            scale={sizes.deskScale}
-                            rotation={[0.2, -Math.PI, 0]}
-                        // position={[x.positionX, x.positionY, x.positionZ]}
-                        // rotation={[x.rotationX, x.rotationY, x.rotationZ]}
-                        // scale={[x.scale, x.scale, x.scale]}
-                        />
+
+                        <HeroCamera isMobile={isMobile} >
+                            <HackerRoom
+                                position={sizes.deskPosition}
+                                scale={sizes.deskScale}
+                                rotation={[0.2, -Math.PI, 0]}
+                            // position={[x.positionX, x.positionY, x.positionZ]}
+                            // rotation={[x.rotationX, x.rotationY, x.rotationZ]}
+                            // scale={[x.scale, x.scale, x.scale]}
+                            />
+                        </HeroCamera>
 
                         <group>
                             <Target
