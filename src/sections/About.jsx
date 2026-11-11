@@ -26,10 +26,10 @@ const About = () => {
 
                         <div>
                             <p className="grid-headtext">
-                                Hola, soy Gabriel!
+                                Hello, I'm Gabriel!
                             </p>
                             <p className="grid-subtext">
-                                Cuento con 3 años de experiencia en el sector IT, desempeñándome en áreas de Testing de Software, Análisis Funcional y Análisis de Negocio. Estas experiencias me permitieron desarrollar una sólida comprensión de cómo la tecnología puede resolver problemas reales.
+                                I have 3 years of experience in the IT industry, working in Software Testing, Functional Analysis, and Business Analysis. These experiences have helped me develop a solid understanding of how technology can solve real-world problems.
                             </p>
 
                             {/* <p className="grid-subtext mt-3">Actualmente estoy enfocado en el desarrollo de software, creando aplicaciones web y explorando tecnologías modernas como JavaScript, React, Node.js y Three.js.
@@ -47,7 +47,7 @@ const About = () => {
                                 Tech Stack
                             </p>
                             <p className="grid-subtext">
-                                Estoy desarrollando mis habilidades en JavaScript y React, explorando tecnologías modernas de frontend y desarrollo web 3D.
+                                I'm continuously developing my skills in JavaScript and React, exploring modern frontend technologies and 3D web development.
                             </p>
                         </div>
                     </div>
@@ -76,14 +76,14 @@ const About = () => {
                         </div>
                         <div>
                             <p className='grid-headtext'>
-                                Con base en Argentina 🇦🇷
+                                Based in Argentina 🇦🇷
                             </p>
 
                             <p className="grid-subtext">
-                                Estoy radicado en Argentina (UTC−3) y estoy abierto a oportunidades laborales y colaboraciones remotas con equipos de todo el mundo.
+                                I'm based in Argentina (UTC-3) and open to remote opportunities and collaborations with teams around the world.
                             </p>
 
-                            <Button name="Contactame" isBeam containerClass="w-full mt-10" />
+                            <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
                         </div>
                     </div>
                 </div>
@@ -94,10 +94,10 @@ const About = () => {
 
                         <div>
                             <p className="grid-headtext">
-                                Mi pasión por la tecnología
+                                My Passion for Technology
                             </p>
                             <p className="grid-subtext">
-                                Disfruto aprender, experimentar con nuevas tecnologías y convertir ideas en proyectos reales. Siempre buscando aprender algo nuevo y mejorar en el proceso.
+                                I enjoy learning, experimenting with new technologies, and turning ideas into real-world projects. Always looking to learn something new and improve along the w
                             </p>
                         </div>
                     </div>
@@ -109,11 +109,11 @@ const About = () => {
 
                         <div className="space-y-2">
                             <p className="grid-subtext text-center">
-                                Contactame
+                                Get in Touch
                             </p>
 
                             <div className="copy-container" onClick={handleCopy}>
-                                <img src={hasCopied ? "assets/tick.svg" : "assets/copy.svg" } alt="copy" />
+                                <img src={hasCopied ? "assets/tick.svg" : "assets/copy.svg"} alt="copy" />
                                 <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">gabrielnacevedo@gmail.com</p>
                             </div>
                         </div>

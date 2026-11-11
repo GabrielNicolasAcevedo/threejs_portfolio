@@ -31,10 +31,10 @@ const Hero = () => {
         <section className="min-h-screen w-full flex flex-col relative">
             <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3">
                 <p className="sm:text-3xl text-xl font-medium text-white text-center font-generalsans" >
-                    Hola, Soy Gabriel Acevedo <span className="waving-hand">👋</span>
+                    Hello, I'm Gabriel <span className="waving-hand">👋</span>
                 </p>
                 <p className="hero_tag text-gray_gradient" >
-                    Construyendo Productos & Marcas Digitales
+                    Building Products & Brands
                 </p>
             </div>
 
@@ -82,7 +82,7 @@ const Hero = () => {
 
             <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
                 <a href="#contact" className="w-fit">
-                    <Button name="Trabajemos juntos!" isBeam containerClass="sm:w-fit w-full sm:min-w-96" />
+                    <Button name="Let's work together!" isBeam containerClass="sm:w-fit w-full sm:min-w-96" />
                 </a>
             </div>
         </section>
