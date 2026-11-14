@@ -4,6 +4,11 @@
 /* 2. Tailwind CSS v4*/
 @import "tailwindcss";
 
+
+* {
+  scroll-behavior: smooth ;
+}
+
 /*@tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -136,7 +141,7 @@ body {
   }
 
   .client-review {
-    @apply rounded-lg md:p-10 p-5 col-span-1 bg-black-300 bg-neutral-50;
+    @apply rounded-lg md:p-10 p-5 col-span-1 bg-black-300;
   }
 
   .client-content {

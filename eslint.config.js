@@ -4,7 +4,7 @@ import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 import { defineConfig, globalIgnores } from 'eslint/config'
 import reactThree from '@react-three/eslint-plugin'
-
+import react from 'eslint-plugin-react'
 
 export default defineConfig([
   globalIgnores(['dist']),
@@ -14,13 +14,13 @@ export default defineConfig([
 
     plugins: {
       '@react-three': reactThree,
+      react, 
     },
 
     extends: [
       js.configs.recommended,
       reactHooks.configs.flat.recommended,
       reactRefresh.configs.vite,
-      ReactThreeFiber.configs.recommended,
     ],
 
     languageOptions: {
